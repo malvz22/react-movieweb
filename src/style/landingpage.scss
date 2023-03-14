@@ -1,0 +1,43 @@
+.bg-color{
+    height: 100vh;
+    background: url(../assets/img/bg/cinema.jpg);
+    background-size: cover;
+}
+
+.intro{
+    height: 300px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    .title{
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1;
+        text-align: center;
+        text-shadow: 2px 2px black;
+        letter-spacing: 3px;
+    }
+}
+
+.trending{
+    height: 100vh;
+    // background: url(../assets/img/bg/trending.jpg);
+    // background-size: cover;
+    background-color: black;
+}
+
+.highlight{
+    height: auto;
+    background-color: black;
+}
+
+.highlightImage{
+    width: 80vw;
+}
+
+.movieImage{
+    width: 280px;
+    height: auto;
+    margin: 10px;
+}
