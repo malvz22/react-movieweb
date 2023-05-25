@@ -1,17 +1,20 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/landingpage.css';
-import { useRef } from 'react';
 import NavigationBar from './components/Navbar';
-import { Navbar, Nav, Container } from 'react-bootstrap';
 import Intro from './components/Intro';
 import Trending from './components/Trending';
 import Highlight from './components/Highlight';
+import Action from './components/Action';
 
 function App() {
 
+  // const clicked = () => {
+  //   return alert("Ceritanya direct ke movie list...☺️");
+  // }
+
   return (
-    <div>
+    <>
       {/* Intro Section */}
       <div className="bg-color">
         <NavigationBar />
@@ -30,7 +33,13 @@ function App() {
         <Trending />
       </div>
       {/* End of Trending section */}
-    </div>
+
+      {/* Action section */}
+      <div className='action'>
+        <Action />
+      </div>
+      {/* End of Action section */}
+    </>
   );
 }
 

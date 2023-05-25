@@ -4,6 +4,10 @@
     background-size: cover;
 }
 
+body{
+    background-color: black;
+}
+
 .intro{
     height: 300px;
     display: flex;
@@ -21,14 +25,35 @@
 }
 
 .trending{
-    height: 100vh;
-    // background: url(../assets/img/bg/trending.jpg);
-    // background-size: cover;
-    background-color: black;
+    height: auto;
+    margin-bottom: 3%;
+}
+
+.action{
+    height: auto;
+    margin-bottom: 3%;
+}
+
+.card-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title{
+    font-size: 1.10rem;
+}
+
+.card{
+    margin: 1rem;
+}
+
+.carousel-indicators{
+    display: none;
 }
 
 .highlight{
-    height: auto;
+    height: 100vh;
     background-color: black;
 }
 
@@ -37,7 +62,56 @@
 }
 
 .movieImage{
-    width: 280px;
+    width: 200px;
+    aspect-ratio: 2/3;
     height: auto;
     margin: 10px;
+    object-fit: cover;
+}
+
+.nav-brand{
+    a {
+        text-decoration: none;
+    }
+}
+
+.search-text{
+    margin-top: 60px;
+}
+
+.movie-search-container{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.movie-search-title {
+    font-size: 15px;
+    margin-top: 25px;
+    color: white;
+    height: 50px;
+    font-weight: bold;
+}
+
+.movie-search-wrapper{
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.movie-search-image{
+    width: 100%;
+    height: auto;
+    border-radius: 4%;
+}
+
+.movie-search-result{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }

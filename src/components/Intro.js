@@ -1,4 +1,5 @@
 import { Col, Container, Row, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Intro = () => {
   return (
@@ -9,7 +10,7 @@ const Intro = () => {
             <div className="title">WELCOME TO</div>
             <div className="title">CINEMA 22</div>
             <div className="introButton mt-4 text-center">
-              <Button variant="dark">View Movie List</Button>
+              <Link to={"/movie-search"}><Button variant="dark">View Movie List</Button></Link>
             </div>
           </Col>
         </Row>

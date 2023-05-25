@@ -1,11 +1,14 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
     return (
-        <div>
+        <>
             <Navbar fixed="top" variant="dark">
                 <Container>
-                    <Navbar.Brand>Cinema XXII</Navbar.Brand>
+                    <div className="nav-brand">
+                        <Link to={"/"}><Navbar.Brand>Cinema XXII</Navbar.Brand ></Link>
+                    </div>
                     <Nav>
                         <Nav.Link>Trending</Nav.Link>
                         <Nav.Link>Action</Nav.Link>
@@ -13,7 +16,7 @@ const NavigationBar = () => {
                     </Nav>
                 </Container>
             </Navbar>
-        </div>
+        </>
 
     )
 }
